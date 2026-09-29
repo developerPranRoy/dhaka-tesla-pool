@@ -9,4 +9,5 @@ export const config = {
   databaseUrl: required("DATABASE_URL"),
   jwtSecret: required("JWT_SECRET"),
   webOrigin: process.env.WEB_ORIGIN ?? "http://localhost:3000",
+  seedDemoData: process.env.SEED_DEMO_DATA === "true",
 };
